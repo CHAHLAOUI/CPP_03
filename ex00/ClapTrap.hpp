@@ -6,7 +6,7 @@
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:45:57 by achahlao          #+#    #+#             */
-/*   Updated: 2025/04/27 12:11:59 by achahlao         ###   ########.fr       */
+/*   Updated: 2025/04/27 14:40:21 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ public:
     
 
     std::string  getname() const;
-    int get_hitPoints() const ;
-    int get_energyPoints() const;
-    int get_attackDamage() const ;
+    unsigned int get_hitPoints() const ;
+    unsigned int get_energyPoints() const;
+    unsigned int get_attackDamage() const ;
 };
 
 # endif

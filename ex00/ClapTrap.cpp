@@ -6,7 +6,7 @@
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:45:52 by achahlao          #+#    #+#             */
-/*   Updated: 2025/04/27 12:31:56 by achahlao         ###   ########.fr       */
+/*   Updated: 2025/04/27 14:41:10 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& obj)
     {
         name    =       obj.getname();
         hitPoints =     obj.get_hitPoints();
-        energyPoints =  get_energyPoints();
-        attackDamage =  get_attackDamage();
+        energyPoints =  obj.get_energyPoints();
+        attackDamage =  obj.get_attackDamage();
     }
     return (*this);
 }
@@ -90,19 +90,20 @@ void ClapTrap::beRepaired(unsigned int amount) {
     std::cout << "Now HP . " << hitPoints << "New energyn . " << energyPoints << std::endl;
 }
 
+
 // getter et setter
 
-int ClapTrap::get_attackDamage() const 
+unsigned int ClapTrap::get_attackDamage() const 
 {
     return(attackDamage);
 }
 
-int ClapTrap::get_energyPoints() const 
+unsigned int ClapTrap::get_energyPoints() const 
 {
     return (energyPoints);
 }
 
-int ClapTrap::get_hitPoints() const 
+unsigned int ClapTrap::get_hitPoints() const 
 {
     return (hitPoints);
 }
