@@ -6,7 +6,7 @@
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:45:57 by achahlao          #+#    #+#             */
-/*   Updated: 2025/04/26 10:20:23 by achahlao         ###   ########.fr       */
+/*   Updated: 2025/04/27 12:11:59 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ private:
 public:
     ClapTrap() ;
     ClapTrap(const std::string& _name);
+    ClapTrap(const ClapTrap& obj);
+	ClapTrap& operator=(const ClapTrap& obj);
     ~ClapTrap() ;
     
     void attack(const std::string& target);
