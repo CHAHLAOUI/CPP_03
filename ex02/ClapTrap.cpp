@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 14:43:16 by achahlao          #+#    #+#             */
-/*   Updated: 2025/04/28 16:32:07 by achahlao         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap() : name("") , hitPoints(10), energyPoints(10), attackDamage(0)
@@ -91,7 +79,9 @@ void ClapTrap::beRepaired(unsigned int amount)
     std::cout << "Now HP . " << hitPoints << "New energyn . " << energyPoints << std::endl;
 }
 
+
 // getter et setter
+
 unsigned int ClapTrap::get_attackDamage() const 
 {
     return(attackDamage);
