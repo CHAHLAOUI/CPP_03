@@ -6,7 +6,7 @@
 /*   By: achahlao <achahlao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:45:52 by achahlao          #+#    #+#             */
-/*   Updated: 2025/04/27 14:41:10 by achahlao         ###   ########.fr       */
+/*   Updated: 2025/04/29 03:14:09 by achahlao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ ClapTrap::ClapTrap(const ClapTrap& obj)
 :   name(obj.getname()) ,
     hitPoints(obj.get_hitPoints()),
     energyPoints(obj.get_energyPoints()) ,
-    attackDamage(get_attackDamage())
+    attackDamage(obj.get_attackDamage())
 {
     std::cout << "ClapTrap " << name << " Copy constructor called" << std::endl;
 }
